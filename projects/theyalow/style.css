@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 1020px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/*HEADER 1st part*/
+
+header {
+  background-image: url(assets/header_background.png);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.logo {
+  display: flex;
+}
+.logo h1 {
+  align-self: center;
+  margin-top: 7px;
+  margin-left: 7px;
+  font-family: 'Lucida Sans';
+  font-style: italic;
+  font-weight: normal;
+  font-size: 41px;
+  color: rgba(255, 255, 255, 255);
+  text-transform: uppercase;
+}
+.logo_img {
+  height: 79px;
+  width: 79px;
+  background-image: url(assets/logo1.png), url(assets/logo2.png);
+  background-position: center;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 453px;
+  height: 41px;
+  margin-top: 40px;
+  background-color: #f5c506;
+  box-shadow: -4px -4px 0 rgba(245, 197, 6, 0.3), -8px -8px 0 rgba(245, 197, 6, 0.3);
+}
+.menu {
+  display: flex;
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  margin-left: 9px;
+  font-family: 'Segoe WP';
+  font-size: 17px;
+  color: rgba(155, 125, 8, 255);
+  text-transform: uppercase;
+}
+.menu_item {
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  border-right: 1px solid #dcb105;
+}
+
+.menu_item:hover {
+  background-color: #0B3218;
+}
+
+/*HEADER 2nd part*/
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 0 71px;
+}
+.banner_video {
+  padding-left: 10px;
+}
+.banner_title {
+  align-self: center;
+  margin-bottom: 25px;
+  margin-right: 22px;
+  font-family: 'Asap';
+  font-size: 63px;
+  color: rgba(245, 197, 6, 255);
+  text-transform: uppercase;
+  text-align: center;
+}
+.banner_title_subtitle {
+  color: #ffffff;
+}
+
+/*MAIN, section advantages*/
+
+.advantages {
+  height: 212px;
+  background-color: #f0f0f0;
+  box-shadow: 0px -5px 5px -1px #3E3F42, 0px 5px 5px -1px #3E3F42;
+}
+.advantages ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.advantages_item {
+  flex-basis: 0;
+  flex-grow: 1;
+  border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+  align-self: flex-end;
+}
+.advantages_item_img {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 9px;
+  padding-top: 40px;
+}
+.advantages_item_text {
+  font-family: 'Segoe UI';
+  font-weight: 300;
+  font-size: 27px;
+  color: rgba(0, 0, 0, 255);
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+/*MAIN, section twitter*/
+
+.twitter_title {
+  padding: 32px 0;
+  font-family: 'PT Sans';
+  font-weight: normal;
+  font-size: 37px;
+  color: rgba(255, 255, 255, 255);
+  text-transform: uppercase;
+  text-align: left;
+}
+.twitter {
+  height: 509px;
+  background-image: url(assets/twitter_background.png);
+}
+.twitter_string {
+  display: flex;
+  justify-content: space-between;
+}
+.twitter_string_content {
+  display: flex;
+}
+.twitter_string_content_text {
+  position: relative;
+  background-color: #ec9e03;
+  width: 341px;
+  height: 233px;
+}
+.twitter_string_content_text p {
+  padding: 15px 38px 34px 31px;
+  font-family: 'Segoe WP';
+  font-weight: 200;
+  font-size: 29px;
+  color: rgba(255, 255, 255, 255);
+  text-align: left;
+}
+.twitter_string_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 329px;
+  height: 233px;
+  background-color: #ec9e03;
+}
+.twitter_string_img_item0 {
+  position: absolute;
+  top: 20px;
+  right: 19px;
+  font-family: 'Segoe WP';
+  font-size: 24px;
+  font-weight: 100;
+  color: white;
+}
+.twitter_string_content_text span,
+.twitter_string_img_item1 {
+  position: absolute;
+  right: 14px;
+  bottom: 13px;
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+.twitter_string_content_text span:hover,
+.twitter_string_img_item1:hover {
+  color: #0B3218;
+  font-size: 300%;
+}
+.twitter_date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 113px;
+  height: 86px;
+  background-color: #ddb101;
+}
+.twitter_date_item0 {
+  margin-bottom: -10px;
+  font-family: 'Segoe UI';
+  font-size: 51px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 255);
+}
+.twitter_date_item1 {
+  font-family: 'Segoe UI';
+  font-size: 20px;
+  color: rgba(178, 101, 41, 255);
+}
+.twitter_slide {
+  max-width: 100%;
+  margin: 43px auto 0;
+  width: 896px;
+  height: 15px;
+  background-color: #fae284;
+  border-radius: 10px;
+}
+.twitter_slide_bar {
+  margin-left: 25%;
+  width: 197px;
+  height: 15px;
+  background-color: #ec9e03;
+  border-radius: 10px;
+}
+
+/*MAIN, section free*/
+
+.free {
+  height: 499px;
+  background-image: url(assets/free_section_background.png);
+}
+.free_title {
+  padding: 40px 0 5px;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 43px;
+  color: rgba(245, 197, 6, 255);
+  text-transform: uppercase;
+  text-align: center;
+}
+.free_content {
+  display: flex;
+  justify-content: space-between;
+}
+.free_content_text {
+  max-width: 353px;
+  align-self: flex-end;
+  list-style: none;
+}
+.free_content_text_item {
+  padding-top: 22px;
+  position: relative;
+  font-family: 'PT Sans';
+  font-size: 23px;
+  color: rgba(169, 169, 167, 255);
+  letter-spacing: 1px;
+}
+.free_content_text_item::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #f5c506;
+  position: absolute;
+  top: 30px;
+  left: -8%;
+}
+.free_content_text_item:last-child {
+  margin-bottom: -10px;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #4c4c4c;
+  box-shadow: 0 -4px 7px #1a1a1a;
+}
+.footer_content {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+.footer_content_text {
+  margin-left: 9px;
+  font-family: 'Lucida Sans';
+  font-style: italic;
+  font-size: 29px;
+  color: rgba(255, 255, 255, 255);
+  text-transform: uppercase;
+}
+
+/*----------------------------------------------------------------------------*/
+/*--------------------   Mobile version(640px)   -----------------------------*/
+/*----------------------------------------------------------------------------*/
+
+@media all and (max-width: 640px) {
+  .banner_title, .free_content_text, .twitter_title,
+  .twitter_slide, .twitter_date, .twitter_string_img {
+    display: none;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .header, .banner_video, .banner {
+    padding: 0;
+  }
+  .advantages_item {
+    border: 0;
+  }
+  .nav {
+    margin: 0;
+  }
+  .advantages, .nav {
+    box-shadow: none;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .mobile_block {
+    display: flex;
+    margin-top: 9px;
+    width: 100%;
+    height: 233px;
+    background-color: #f5c507;
+  }
+  .mobile_block_img {
+    width: 324px;
+    height: 233px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile_block_tweet {
+    width: 323px;
+    height: 233px;
+  }
+  .mobile_block_tweet_message {
+    width: 284px;
+    height: 42px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .mobile_block_tweet_message:first-child {
+    margin-top: 24px;
+  }
+  .mobile_block_tweet_message:nth-child(2) {
+    background-color: #fceeb5;
+  }
+  .mobile_block_tweet_message:nth-child(3) {
+    background-color: #fbe89c;
+  }
+  .mobile_block_tweet_message_container {
+    width: 217px;
+    height: 28px;
+    padding-top: 9px;
+    padding-left: 27px;
+  }
+  .mobile_block_tweet_message_container_text {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgba(143, 142, 142, 255);
+  }
+  .mobile_block_tweet_form {
+    display: flex;
+    width: 270px;
+    height: 29px;
+  }
+  .mobile_block_tweet_form_input {
+    width: 200px;
+    height: 29px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #d0a806;
+  }
+  .mobile_block_tweet_form_submit {
+    width: 70px;
+    height: 31px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #d0a806;
+    background-color: #d89614;
+    color: white;
+  }
+}
+@media all and (min-width: 641px) {
+  .mobile_block {
+    display: none;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .banner_video {
+    width: 100%;
+    background-color: black;
+  }
+  .logo {
+    width: 186px;
+    height: 62px;
+    background: linear-gradient(#5a5a5a, #444444);
+  }
+  .logo_img {
+    background-image: url(assets/footer_logo.png);
+    background-repeat: no-repeat;
+    background-size: 38px;
+    margin-top: -5px;
+  }
+  .logo h1 {
+    padding-right: 20px;
+    font-size: 100%;
+  }
+  .nav {
+    width: 455px;
+    height: 62px;
+  }
+  .advantages {
+    height: 174px;
+    display: flex;
+  }
+  .advantages_item img {
+    width: 40%;
+  }
+  .advantages_item_text {
+    font-size: 150%;
+  }
+  .twitter {
+    height: 100%;
+    background-image: none;
+  }
+  .twitter_string_content_text {
+    width: 299px;
+    height: 232px;
+  }
+  .twitter_string_content_text p {
+    font-size: 165%;
+  }
+  .twitter_string {
+    flex-wrap: wrap;
+  }
+  .twitter_string_content_text {
+    margin-right: 8px;
+  }
+  .free {
+    height: 100%;
+    background-image: none;
+    background-color: #474747;
+  }
+  .free_content_img {
+    margin: 20px auto 55px;
+  }
+  footer img {
+    margin-left: 65px;
+    width: 29px;
+    height: 29px;
+  }
+  .footer_content_text {
+    font-size: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+.button-swap,
+.button-back {
+  position: fixed;
+  width: 100px;
+  height: 30px;
+  border: 0;
+  cursor: pointer;
+  background-color: #1c365e;
+  color: #FFF;
+  opacity: 0.75;
+}
+.button-swap {
+  top: 20px;
+  left: 20px;
+}
+.button-back {
+  top: 60px;
+  left: 20px;
+}
+
+@media all and (max-width: 370px) {
+  .button-swap {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+body {
+  background-color: gray !important;
+}
+.container {
+  background-color: white;
+}
+.carousel {
+  background-color: #181818;
+  color: white;
+}
+.mobile {
+  display: none;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    background-color: white !important;
+  }
+  .mobile {
+    display: block;
+  }
+  .title-0, .title-1, .content-0, .content-1 {
+    display: none !important;
+  }
+}
